@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SusaLight';
+    src: url('SusaLight.eot');
+    src: url('SusaLight.eot?#iefix') format('embedded-opentype'),
+        url('SusaLight.woff2') format('woff2'),
+        url('SusaLight.woff') format('woff'),
+        url('SusaLight.ttf') format('truetype'),
+        url('SusaLight.svg#SusaLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
