@@ -58,3 +58,41 @@ $('.big-slide').slick({
 });
 
 });
+
+let telBtn = document.querySelector('.header__btn');
+let modal = document.querySelector('.modal');
+let no = document.querySelector('.no');
+let yes = document.querySelector('.yes');
+
+// Модальное окно заказать звонок!
+telBtn.addEventListener('click', function(){
+  // console.log('helloos')
+   modal.style.display = 'block';
+
+
+   let yes = document.querySelector('.yes');
+   
+    yes.addEventListener('click', function(){
+      modal.style.display = 'none';
+   });
+    no.addEventListener('click', function(){
+      alert('Ну и пошел ты в ЖОПУ!')
+      modal.style.display = 'none';
+   });
+});
+
+// Модальное окно на запрет клика правой кнопкой мышки!
+document.oncontextmenu = function(){
+  // let modalDanger = document.querySelector('.mod-fix');
+  // let body = document.querySelector('body');
+
+      // modalDanger.style.display = 'block';
+      // body.style.background = 'black';
+    
+    // function mod() {
+    //   modalDanger.style.display = 'none';
+    //   body.style.background = '';
+    // }
+    // setInterval(mod, 3000);
+    return false
+}
